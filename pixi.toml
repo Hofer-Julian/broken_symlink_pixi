@@ -1,0 +1,13 @@
+[project]
+authors = ["Julian Hofer <julianhofer@gnome.org>"]
+channels = ["conda-forge"]
+description = "Add a short description here"
+name = "broken_symlink"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+test = { cmd = "echo Hello", inputs = [".gitignore"] }
+
+[dependencies]
+gcc_impl_linux-64 = "==14.1.0"
